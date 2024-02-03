@@ -34,6 +34,7 @@
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+    text-decoration: none; /* РЈР±РёСЂР°РµРј РїРѕРґС‡РµСЂРєРёРІР°РЅРёРµ Сѓ СЃСЃС‹Р»РєРё */
 }
 
 .button {
@@ -78,14 +79,15 @@ body {
     text-decoration: none;
     transition: color .1s linear;
 }
+
 .nav-select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     padding: 5px 30px 5px 10px;
-    border: none; /* Удаляем рамку кнопки */
+    border: none; 
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0); /* Прозрачный фон кнопки */
+    background-color: rgba(255, 255, 255, 0); 
     background-image: url('data:image/svg+xml,\
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="18px" height="18px">\
             <path d="M7 10l5 5 5-5z" />\
@@ -93,18 +95,35 @@ body {
     background-repeat: no-repeat;
     background-position: right 10px center;
     cursor: pointer;
-    outline: none; /* Удаляем обводку при фокусе */
-    color: white; /* Устанавливаем цвет текста кнопки в белый */
-    font-weight: bold; /* Устанавливаем текст жирным */
-}
-/* Footer */
-.footer {
-    background-color: #333; /* Цвет фона футера */
-    color: #fff; /* Цвет текста */
-    padding: 20px; /* Внутренние отступы */
-    text-align: center; /* Выравнивание текста по центру */
-    width: 100%; /* Ширина на всю ширину экрана */
-    position: fixed; /* Фиксированная позиция */
-    bottom: 0; /* Поместить футер внизу страницы */
+    outline: none; 
+    color: white; 
+    font-weight: bold; 
 }
 
+/* Footer */
+.footer {
+    background-color: #333; 
+    color: #fff; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    position: fixed; 
+    bottom: 0; 
+}
+
+/* РњРµРґРёР°-Р·Р°РїСЂРѕСЃС‹ РґР»СЏ РјРѕР±РёР»СЊРЅС‹С… СѓСЃС‚СЂРѕР№СЃС‚РІ */
+@media only screen and (max-width: 600px) {
+    .header {
+        padding-top: 10px;
+    }
+
+    .intro {
+        font-size: 16px;
+        padding-top: 50px;
+    }
+
+    .nav {
+        font-size: 12px;
+    }
+    }
+    
